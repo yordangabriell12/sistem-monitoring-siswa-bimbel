@@ -1,5 +1,10 @@
 <?php
 
-use App\Http\Controllers\ArtikelController;
+use Illuminate\Support\Facades\Route;
 
-Route::resource('artikel', ArtikelController::class);
+Route::get('/', function () {
+    return view('home');
+});
+use App\Http\Controllers\ProjectController;
+
+Route::get('/', [ProjectController::class, 'index']);
