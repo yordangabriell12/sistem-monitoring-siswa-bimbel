@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Laravel CRUD</title>
+    <title>Student CRUD</title>
 </head>
 <body>
     <div class="container">

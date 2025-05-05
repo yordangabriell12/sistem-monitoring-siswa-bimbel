@@ -4,7 +4,7 @@ use Illuminate\Support\Str;
 
 return [
 
-    'default' => env('DB_CONNECTION', 'mysql'),
+    'default' => env('DB_CONNECTION', 'oracle'),
 
     'connections' => [
 
@@ -74,11 +74,10 @@ return [
             'sslmode' => 'prefer',
         ],
 
-        // Konfigurasi oracle disimpan tapi tidak digunakan dulu
         'oracle' => [
             'driver'        => 'oracle',
             'tns'           => env('DB_TNS', ''),
-            'host'          => env('DB_HOST', 'localhost'),
+            'host'          => env('DB_HOST', '127.0.0.1'),
             'port'          => env('DB_PORT', '1521'),
             'database'      => env('DB_DATABASE', 'XE'),
             'username'      => env('DB_USERNAME', 'system'),
